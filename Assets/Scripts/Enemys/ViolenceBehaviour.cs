@@ -12,7 +12,6 @@ public class ViolenceBehaviour : MonoBehaviour
     [SerializeField] NavMeshAgent agent;
     [SerializeField] float initialvelocity;
     [SerializeField] float maxvelocity;
-    //[SerializeField] float runvelocity;
     [SerializeField] float waitingtime;
     [SerializeField] float Maxseconds;
     [SerializeField] float SpawnCouldown;
@@ -125,7 +124,6 @@ public class ViolenceBehaviour : MonoBehaviour
                 agent.speed = velocity;
             }
 
-            actualTime = globalTime.Actualtime;
             Patroll(Num);
 
             Debug.Log("Violence has appear");
